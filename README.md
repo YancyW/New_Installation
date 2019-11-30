@@ -53,28 +53,28 @@
 
 ## build vpn
 ### set server
-	- go to my.vultr.com
-	- buy a VPS with CentOS system
-	- run VPS, record ip address
-	- login VPS with ssh
-	#### install shadowsocks
-	'''
-	yum install wget
-	get -no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh
-	chmod +x shadowsocks.sh
-	'''
-	#### install libsodium
-	'''
-	yum install libsodium
-	''' 
-	#### set ss password and port
-	'''
-	./shadowsocks.sh 2>&1 | tee shadowsocks.log
-	'''
-	set password :
-	set port     :  choose any one, not a real port number, only ss use this.
-	set encode method : 7 (aes-256-cfb)
-	press enter to install 
+- go to my.vultr.com
+- buy a VPS with CentOS system
+- run VPS, record ip address
+- login VPS with ssh
+#### install shadowsocks
+'''
+yum install wget
+get -no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh
+chmod +x shadowsocks.sh
+'''
+#### install libsodium
+'''
+yum install libsodium
+''' 
+#### set ss password and port
+'''
+./shadowsocks.sh 2>&1 | tee shadowsocks.log
+'''
+set password :
+set port     :  choose any one, not a real port number, only ss use this.
+set encode method : 7 (aes-256-cfb)
+press enter to install 
 ### set client
 	#### install ss
 	'''
