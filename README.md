@@ -9,9 +9,9 @@
    - sudo chsh -s $(which zsh)
    - logout 
    - sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+4 git clone 
 
 
-4. sudo apt install libboost-dev
 5. madgraph5
 6. yaml-cpp
 7. delphes
